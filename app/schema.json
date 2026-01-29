@@ -1,0 +1,5801 @@
+{
+  "Client": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 103,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "email",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "mobile",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "GSTIN",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "PAN",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentTerm",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "street1",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "street2",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "PIN",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "city",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "state",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "profilePic",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "enablePinVerification",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "meterReadingPhotoRequired",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "notifyAll",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "allowPaperlessDutySlip",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "withAC",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "gstState",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "smsEnabled",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "emailEnabled",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isIndividualEntity",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "enableRazorPayGateway",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "enableDutiyslipRouteMap",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isAdminTourReviewer",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isCostCenter",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "drivingLicenseNo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "drivingLicenseExpiry",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "drivingLicenseType",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "drivingLicenseFrontPath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "drivingLicenseBackPath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "idProofType",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "idProofNumber",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "idProofPath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "idProofBackPath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "profileStatus",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isProfileImmutable",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "profileImmutableAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "ContactPerson": {
+    "description": "",
+    "primary_key": "UserId",
+    "row_count": 105,
+    "columns": [
+      {
+        "name": "ClientId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "UserId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "isEmployee",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "CostCenterId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "CostCenter": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 22,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "enabled",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "ClientId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "DemandAggregate": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "gridLat",
+        "type": "numeric",
+        "nullable": false,
+        "description": "Rounded latitude to 2 decimal places (~1km grid)"
+      },
+      {
+        "name": "gridLng",
+        "type": "numeric",
+        "nullable": false,
+        "description": "Rounded longitude to 2 decimal places (~1km grid)"
+      },
+      {
+        "name": "periodType",
+        "type": "USER-DEFINED",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "periodStart",
+        "type": "bigint",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "periodEnd",
+        "type": "bigint",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "bookingCount",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "totalRevenue",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "avgRentalDuration",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "vehicleTypeBreakdown",
+        "type": "jsonb",
+        "nullable": true,
+        "description": "JSONB: {CAR: count, BIKE: count, SUV: count, ...}"
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Driver": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 462,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "licenseNo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "licenseExpiresOn",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "licenseType",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "profilePic",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "UserId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VendorId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "DriverExpense": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 13,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "humanReadableId",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "USER-DEFINED",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "date",
+        "type": "bigint",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "receiptPath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "receiptFileName",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "approvedAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "approvedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "rejectedAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "rejectedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "rejectionReason",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "location",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "geoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "SelfDriveRentalId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VehicleId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "UserId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "DriverRentalSettings": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 2,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "businessName",
+        "type": "character varying",
+        "nullable": true,
+        "description": "Business/Company name to show on agreement"
+      },
+      {
+        "name": "businessAddress",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "businessPhone",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "businessEmail",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "businessLogoPath",
+        "type": "character varying",
+        "nullable": true,
+        "description": "S3 path for business logo"
+      },
+      {
+        "name": "gstNumber",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "termsAndConditions",
+        "type": "text",
+        "nullable": true,
+        "description": "Custom terms and conditions for rental agreements"
+      },
+      {
+        "name": "defaultDailyRate",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "defaultSecurityDeposit",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "includeInspectionPhotos",
+        "type": "boolean",
+        "nullable": true,
+        "description": "Include inspection photos in agreement PDF"
+      },
+      {
+        "name": "requireCustomerSignature",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "UserId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "EmergencyContact": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 4,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "phoneNumber",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "alternatePhoneNumber",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "category",
+        "type": "USER-DEFINED",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isActive",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "displayOrder",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Guest": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 10676,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "mobile",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "alternateMobile",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isPrimary",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "profilePic",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pickupGeoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "dropGeoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pickupTime",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "sequence",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pickup",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "drop",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Invoice": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 3837,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "currency",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "items",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "rates",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentTerms",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "total",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "GST",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "subTotal",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tdsAmount",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "totalAmountReceived",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "totalAmountPending",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "notes",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "invoiceNumber",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "organization",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "client",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tour",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tourId",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "subject",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentTermsConditions",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "files",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tourDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tourDetails",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "summary",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentMethod",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "invoiceDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "dueDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "lastPaidOn",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billClosedOn",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isGrouped",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "groupedInvoiceId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "ClientId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "systemInvoiceNumber",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Notification": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 35929,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "template",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "messageId",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "failedReason",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "sendTo",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "content",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "role",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "NotificationConfig": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 1021,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "template",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "toGuest",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "toBooker",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "toAllBooker",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "toDriver",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "ClientId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "toAllOrgStaff",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "toAllOrgAdmin",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      }
+    ]
+  },
+  "Organization": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 4,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "email",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "mobile",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "street1",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "street2",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "PIN",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "city",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "state",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tagline",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "PAN",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "GSTIN",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "extraFullBaseChargesApplicableForLateDrop",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "extraFullBaseChargesForLateDrop",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "nightChargesApplicableForLateDrop",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "nightChargesForLateDrop",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentTermsConditions",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "expenseLockingPeriod",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "dutySlip",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "logo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "geoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "address",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "gstState",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "TDS",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "emailBodyContent",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "shortCode",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "emailSignature",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "enableRazorPayGateway",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isManualInvoiceNumber",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "rentalTermsConditions",
+        "type": "text",
+        "nullable": true,
+        "description": "Default terms and conditions text for rental agreements"
+      }
+    ]
+  },
+  "OrganizationSmsTemplateConfig": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 12,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "templateName",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "templateId",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "variableIndex",
+        "type": "ARRAY",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Otp": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 168,
+    "columns": [
+      {
+        "name": "id",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "mobile",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "otp",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "expiry",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Package": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 490,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "basicFare",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "basicKM",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "basicTimeInHours",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "distanceInKM",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "timeInHR",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "extraChargePerHR",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "extraChargePerKM",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "driverAllowance",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "nightCharges",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "driverPerDayAllowance",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "gst",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tollIncluded",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "parkingIncluded",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingOnDropLocation",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingOnGarajLocation",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingOnOther",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingStartKm",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingEndKm",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "segment",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isLocalTrip",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isOutStation",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "ClientId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "PaymentRecords": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 69,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "amountPaid",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "datePaid",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentMethod",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "note",
+        "type": "text",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "recordNo",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paidBy",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "refNo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isTdsDeducted",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tds",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "InvoiceId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Pin": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 31,
+    "columns": [
+      {
+        "name": "id",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "otp",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      }
+    ]
+  },
+  "RazorPayInvoice": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 10,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "refNo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "invoiceUrl",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "InvoiceId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "RentalAgreement": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 12,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "agreementNumber",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "generatedAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pdfPath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pdfGeneratedAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "qrCodePath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "qrCodeUrl",
+        "type": "character varying",
+        "nullable": true,
+        "description": "Public URL that QR code points to for viewing agreement"
+      },
+      {
+        "name": "snapshotData",
+        "type": "jsonb",
+        "nullable": true,
+        "description": "JSONB snapshot of rental, customer, vehicle, and org data at time of generation"
+      },
+      {
+        "name": "isLocked",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "lockedAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "customerSignaturePath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "ownerSignaturePath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "signedAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "SelfDriveRentalId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "publicAccessToken",
+        "type": "character varying",
+        "nullable": true,
+        "description": "Token for public access to agreement without authentication"
+      },
+      {
+        "name": "status",
+        "type": "character varying",
+        "nullable": true,
+        "description": "Agreement status: DRAFT, GENERATED, SIGNED, VOID"
+      }
+    ]
+  },
+  "RentalInspection": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 17,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "odometerReading",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "fuelLevel",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "exteriorCondition",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "interiorCondition",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "customerSignature",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "SelfDriveRentalId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "inspectionType",
+        "type": "USER-DEFINED",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "inspectionDateTime",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "inspectorSignature",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "notes",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VehicleId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "RentalInspectionImage": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 12,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "imagePath",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "imageFileName",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "category",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "RentalInspectionId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "fileName",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "format",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "imageType",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "caption",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "notes",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "damageMarkings",
+        "type": "jsonb",
+        "nullable": true,
+        "description": "Array of damage markers: [{id, x, y, damageType, severity, notes, timestamp, createdBy}]. x,y are normalized 0-1 coordinates."
+      },
+      {
+        "name": "hasDamage",
+        "type": "boolean",
+        "nullable": true,
+        "description": "Quick flag indicating presence of damage markings"
+      }
+    ]
+  },
+  "Role": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 6,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Route": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 73739,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "route",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "RouteCluster": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "clusterlabel",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "centroidpath",
+        "type": "jsonb",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "frequency",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "avgdistance",
+        "type": "double precision",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdat",
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "RouteClusterTour": {
+    "description": "",
+    "primary_key": "TourId",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "RouteClusterId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      }
+    ]
+  },
+  "RouteCost": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "RouteClusterId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "avgfuelcost",
+        "type": "double precision",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "avgmaintenancecost",
+        "type": "double precision",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "avgdrivercost",
+        "type": "double precision",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "totalcost",
+        "type": "double precision",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "calculatedat",
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "RouteDeviation": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "deviationscore",
+        "type": "double precision",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "maxdeviationmeters",
+        "type": "double precision",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "offroutepercentage",
+        "type": "double precision",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isanomaly",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdat",
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "RoutePath": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "tourid",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "jsonb",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "totaldistance",
+        "type": "double precision",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdat",
+        "type": "timestamp without time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "SelfDriveRental": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 15,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "humanReadableId",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "customerName",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "customerMobile",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "customerEmail",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "customerIdType",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "customerIdNumber",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "customerAddress",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "startDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "endDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "actualReturnDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "numberOfDays",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "dailyRate",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "totalAmount",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "securityDeposit",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "depositStatus",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "depositDeductionAmount",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "depositDeductionReason",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "startOdometer",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "endOdometer",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "startFuelLevel",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "endFuelLevel",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "notes",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VehicleId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "ClientId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "bookingSourceLat",
+        "type": "numeric",
+        "nullable": true,
+        "description": "Latitude of booking source location"
+      },
+      {
+        "name": "bookingSourceLng",
+        "type": "numeric",
+        "nullable": true,
+        "description": "Longitude of booking source location"
+      },
+      {
+        "name": "bookingSourceType",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "bookingSourceAccuracy",
+        "type": "integer",
+        "nullable": true,
+        "description": "GPS accuracy in meters"
+      },
+      {
+        "name": "bookingSourceLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": "GPS location where booking was made (GEOMETRY POINT)"
+      },
+      {
+        "name": "depositRefunded",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "ownerType",
+        "type": "USER-DEFINED",
+        "nullable": false,
+        "description": "DRIVER = driver-owned rental, ORG = org fleet rental"
+      },
+      {
+        "name": "ownerId",
+        "type": "uuid",
+        "nullable": true,
+        "description": "Driver user ID when ownerType is DRIVER"
+      }
+    ]
+  },
+  "Tour": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 4139,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "humanReadableId",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pickup",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "drop",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pickupGeoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "dropGeoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "bookingRequest",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "numberOfGuest",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentMethod",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "note",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "vehicalType",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "startTime",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "garajTime",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "endTime",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "startDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "endDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "enablePinVerification",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isMultiLocation",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "withAC",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "contactPerson",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "ClientId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "DriverId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "PackageId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VehicleId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VendorId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pickupTime",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isForEmployee",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tourInfo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "remark",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isDriverCreated",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "TourExpense": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 1460,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "note",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "TourExpenseDocs": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 1604,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "fileName",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "format",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourExpenseId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "TourGuest": {
+    "description": "",
+    "primary_key": "TourId",
+    "row_count": 5164,
+    "columns": [
+      {
+        "name": "GuestId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "CostCenterId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "TourRating": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 3000,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "rating",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "signature",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "dutySlip",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "TourRequest": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "humanReadableId",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "customerName",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "customerMobile",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "customerEmail",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pickup",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "pickupGeoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "destination",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "destinationGeoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tripType",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "numberOfPassengers",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "preferredVehicleType",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "withAC",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "requestedDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "requestedTime",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "returnDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "specialRequirements",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "urgency",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "quotedAmount",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "quotedAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "quotedMessage",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "acceptedAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "skippedAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "skippedReason",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "convertedTourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "TourRoute": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 44362,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "geoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "TourSummary": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 5472,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "summary",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "invoiceId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "TourTracking": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 21413,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "geoLocation",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "meterReading",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "statusTime",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "statusDetails",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "estimatedTimeInHr",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "address",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "GuestId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "TourGuestGuestId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "TourTrackingDocs": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 5300,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "fileName",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "format",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "TourTrackingId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "User": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 625,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "password",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "email",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "mobile",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "whatsAppNo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "street1",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "street2",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "PIN",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "city",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "state",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isSystemGeneratedPassword",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "accountExpired",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "accountLocked",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "passwordExpired",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "lastLoginAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "profilePic",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "UserNotification": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "USER-DEFINED",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "title",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "message",
+        "type": "text",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "isRead",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "readAt",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "actionRoute",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "actionParams",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "metadata",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "UserId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "UserOrg": {
+    "description": "",
+    "primary_key": "UserId",
+    "row_count": 567,
+    "columns": [
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "UserId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "enabled",
+        "type": "boolean",
+        "nullable": false,
+        "description": ""
+      }
+    ]
+  },
+  "UserRole": {
+    "description": "",
+    "primary_key": "UserId",
+    "row_count": 696,
+    "columns": [
+      {
+        "name": "RoleId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "UserId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Vehicle": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 418,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "seatingCapacity",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "fuelType",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isAC",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "registrationNo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "registrationDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "taxDueDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "permitDueDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "insuranceDueDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "PUCDueDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "engineNo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "chasisNo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "DriverId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VendorId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VehicleModelId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "transmission",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "color",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "dailyRate",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "securityDeposit",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "currentOdometer",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "vehicleImagePath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "fitnessCertificateDueDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "currentRentalId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "vehicleCategory",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "ownerType",
+        "type": "USER-DEFINED",
+        "nullable": false,
+        "description": "DRIVER = personal vehicle, ORG = fleet vehicle"
+      }
+    ]
+  },
+  "VehicleDocument": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 5,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "USER-DEFINED",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "documentNumber",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "issuedDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "expiryDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "imagePath",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "imageFileName",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "notes",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "reminderDays",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VehicleId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "UserId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "VehicleModel": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 47,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "make",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "model",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "segment",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "Vendor": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 108,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "UserId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "VendorAdvancePayment": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 2,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "VendorId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "VendorAdvancePaymentRecords": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 3,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "amount",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "note",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "mode",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "paidDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "bigint",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "bigint",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "VendorAdvancePaymentId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "InvoiceId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "VendorPackage": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 490,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "name",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "basicFare",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "basicKM",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "basicTimeInHours",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "distanceInKM",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "timeInHR",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "extraChargePerHR",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "extraChargePerKM",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "driverAllowance",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "nightCharges",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "driverPerDayAllowance",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "gst",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tollIncluded",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "parkingIncluded",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "segment",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingOnDropLocation",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingOnGarajLocation",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingOnOther",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingStartKm",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billingEndKm",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isLocalTrip",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isOutStation",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "PackageId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "VendorPayment": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 3663,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "status",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "currency",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "items",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "rates",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentTerms",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "total",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "GST",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "subTotal",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tdsAmount",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "totalAmountReceived",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "totalAmountPending",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "notes",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "invoiceNumber",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "organization",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "client",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tour",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tourId",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tourDetails",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tourDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "subject",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentTermsConditions",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "files",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "summary",
+        "type": "jsonb",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "dueDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "invoiceDate",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "lastPaidOn",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "billClosedOn",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "InvoiceId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "TourId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "VendorId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "ClientId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "OrganizationId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "VendorPaymentRecords": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 27,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "amountPaid",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "datePaid",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "paymentMethod",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "recordNo",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "note",
+        "type": "text",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "paidBy",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "refNo",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "isTdsDeducted",
+        "type": "boolean",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tds",
+        "type": "numeric",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "createdAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updatedAt",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "VendorPaymentId",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "createdBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "updatedBy",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "geography_columns": {
+    "description": "",
+    "primary_key": "",
+    "row_count": 0,
+    "columns": [
+      {
+        "name": "f_table_catalog",
+        "type": "name",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "f_table_schema",
+        "type": "name",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "f_table_name",
+        "type": "name",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "f_geography_column",
+        "type": "name",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "coord_dimension",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "srid",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "geometry_columns": {
+    "description": "",
+    "primary_key": "",
+    "row_count": 0,
+    "columns": [
+      {
+        "name": "f_table_catalog",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "f_table_schema",
+        "type": "name",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "f_table_name",
+        "type": "name",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "f_geometry_column",
+        "type": "name",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "coord_dimension",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "srid",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "type",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "location_clusters": {
+    "description": "",
+    "primary_key": "",
+    "row_count": 110,
+    "columns": [
+      {
+        "name": "cluster_id",
+        "type": "bigint",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "cluster_center",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "area_name",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "revision_changes": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 39462,
+    "columns": [
+      {
+        "name": "path",
+        "type": "text",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "document",
+        "type": "json",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "diff",
+        "type": "json",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "revision_id",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "revisions": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": 5078,
+    "columns": [
+      {
+        "name": "model",
+        "type": "character varying",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "document",
+        "type": "json",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "document_id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "document_ids",
+        "type": "json",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "operation",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "revision",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "updated_at",
+        "type": "timestamp with time zone",
+        "nullable": false,
+        "description": ""
+      }
+    ]
+  },
+  "route_cluster": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "cluster_id",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "tour_id",
+        "type": "uuid",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "algorithm",
+        "type": "text",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "route_path": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "tour_id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "path",
+        "type": "jsonb",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "start_point",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "end_point",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "total_distance_km",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "route_similarity": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "tour_id_1",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "tour_id_2",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "frechet_distance",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "dtw_distance",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "combined_distance",
+        "type": "numeric",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "created_at",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "spatial_ref_sys": {
+    "description": "",
+    "primary_key": "srid",
+    "row_count": 8500,
+    "columns": [
+      {
+        "name": "srid",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "auth_name",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "auth_srid",
+        "type": "integer",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "srtext",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "proj4text",
+        "type": "character varying",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  },
+  "tourpoints": {
+    "description": "",
+    "primary_key": "id",
+    "row_count": -1,
+    "columns": [
+      {
+        "name": "id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "tour_id",
+        "type": "uuid",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "seq",
+        "type": "integer",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "latitude",
+        "type": "double precision",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "longitude",
+        "type": "double precision",
+        "nullable": false,
+        "description": ""
+      },
+      {
+        "name": "geom",
+        "type": "USER-DEFINED",
+        "nullable": true,
+        "description": ""
+      },
+      {
+        "name": "recorded_at",
+        "type": "timestamp with time zone",
+        "nullable": true,
+        "description": ""
+      }
+    ]
+  }
+}

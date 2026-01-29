@@ -1,0 +1,96 @@
+{
+  "rules": [
+    "All identifiers are case-sensitive and MUST be double-quoted",
+    "Epoch timestamps are BIGINT milliseconds",
+    "Epoch conversion MUST use to_timestamp(column / 1000.0)",
+    "Never guess column names",
+    "If unsure, use SELECT *"
+  ],
+
+  "table_queries": {
+
+    "Tour": [
+
+      {
+        "intent": "latest_tours",
+        "question": "Get latest 10 tours",
+        "sql": "SELECT * FROM \"Tour\" ORDER BY \"startDate\" DESC LIMIT 10;"
+      },
+
+      {
+        "intent": "tours_by_month",
+        "question": "Get 5 tours in January 2024",
+        "sql": "SELECT * FROM \"Tour\" WHERE to_timestamp(\"startDate\" / 1000.0) >= TIMESTAMP '2024-01-01' AND to_timestamp(\"startDate\" / 1000.0) < TIMESTAMP '2024-02-01' LIMIT 5;"
+      },
+
+      {
+        "intent": "daily_tour_count",
+        "question": "Count tours per day",
+        "sql": "SELECT date(to_timestamp(\"startDate\" / 1000.0)) AS \"day\", COUNT(*) AS \"total\" FROM \"Tour\" GROUP BY \"day\" ORDER BY \"day\";"
+      },
+
+      {
+        "intent": "peak_start_hour",
+        "question": "Find peak tour start hour",
+        "sql": "SELECT EXTRACT(HOUR FROM to_timestamp(\"startTime\" / 1000.0)) AS \"hour\", COUNT(*) AS \"total\" FROM \"Tour\" GROUP BY \"hour\" ORDER BY \"total\" DESC;"
+      },
+
+      {
+        "intent": "recently_created",
+        "question": "Tours created in last 30 days",
+        "sql": "SELECT * FROM \"Tour\" WHERE to_timestamp(\"createdAt\" / 1000.0) >= now() - INTERVAL '30 days';"
+      }
+    ],
+
+    "agno_sessions": [
+
+      {
+        "intent": "latest_sessions",
+        "question": "Get last 20 sessions",
+        "sql": "SELECT * FROM \"agno_sessions\" ORDER BY \"created_at\" DESC LIMIT 20;"
+      },
+
+      {
+        "intent": "sessions_per_day",
+        "question": "Count sessions per day",
+        "sql": "SELECT date(\"created_at\") AS \"day\", COUNT(*) AS \"total\" FROM \"agno_sessions\" GROUP BY \"day\" ORDER BY \"day\";"
+      },
+
+      {
+        "intent": "active_sessions",
+        "question": "Find sessions active in last hour",
+        "sql": "SELECT * FROM \"agno_sessions\" WHERE \"updated_at\" >= now() - INTERVAL '1 hour';"
+      }
+    ],
+
+    "agno_schema_versions": [
+
+      {
+        "intent": "all_versions",
+        "question": "List schema versions",
+        "sql": "SELECT * FROM \"agno_schema_versions\" ORDER BY \"created_at\" DESC;"
+      },
+
+      {
+        "intent": "latest_version",
+        "question": "Latest schema version",
+        "sql": "SELECT * FROM \"agno_schema_versions\" ORDER BY \"created_at\" DESC LIMIT 1;"
+      }
+    ]
+  },
+
+  "cross_table_queries": [
+
+    {
+      "intent": "tours_during_sessions",
+      "question": "Get tours created during active sessions",
+      "sql": "SELECT t.*, s.\"session_id\" FROM \"Tour\" t JOIN \"agno_sessions\" s ON to_timestamp(t.\"createdAt\" / 1000.0) BETWEEN s.\"created_at\" AND s.\"updated_at\";"
+    },
+
+    {
+      "intent": "daily_tours_vs_sessions",
+      "question": "Daily tour count with session count",
+      "sql": "WITH tour_daily AS ( SELECT date(to_timestamp(\"startDate\" / 1000.0)) AS \"day\", COUNT(*) AS \"tours\" FROM \"Tour\" GROUP BY \"day\" ), session_daily AS ( SELECT date(\"created_at\") AS \"day\", COUNT(*) AS \"sessions\" FROM \"agno_sessions\" GROUP BY \"day\" ) SELECT COALESCE(t.\"day\", s.\"day\") AS \"day\", COALESCE(t.\"tours\", 0) AS \"tours\", COALESCE(s.\"sessions\", 0) AS \"sessions\" FROM tour_daily t FULL OUTER JOIN session_daily s ON t.\"day\" = s.\"day\" ORDER BY \"day\";"
+    }
+  ]
+}
